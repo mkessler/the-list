@@ -1,0 +1,62 @@
+[
+  {
+    "id": "values",
+    "name": "Core Values",  
+    "snippet": "These behaviors are tied directly to our core values and have been a cornerstone of our success since our founding.",
+    "behaviors": [
+      {
+      "name": "Show pride in our ability",
+      "description": "We work hard, like to learn new things, and are always on the lookout for ways to grow personally and professionally. We are proud of what we know, and use our knowledge to help our clients be more successful."
+      },
+      {
+      "name": "Do it right the first time",
+      "description": "We hate re-work, so do our best work the first time. And, before we ever hit \"send\" or say a project is complete, we double- or triple-check it for quality."
+      }
+    ]
+  }, 
+  {
+    "id": "service",
+    "name": "Focus on Service",  
+    "snippet": "These habits create extraordinary service experiences.",
+    "behaviors": [
+      {
+      "name": "Delight our clients",
+      "description": "The objective of every client interaction – internal or external – is to make every experience outstanding, surprising our clients with our knowledge, quality, level of service, and speed."
+      },
+      {
+      "name": "Follow-up on everything",
+      "description": "Internal and external clients rely on us, and we rely on them. Record a follow up date and time for every promised action and take responsibility for its completion."
+      }
+    ]
+  },
+  {
+    "id": "collaboration",
+    "name": "The Collaborative Way",  
+    "snippet": "These behaviors enable us to work powerfully together as a team.",
+    "behaviors": [
+      {
+      "name": "Let silence do the heavy lifting",
+      "description": "The only way to know what someone else thinks, believes or knows is to ask them, and then to carefully listen to what they say. You have two ears and one mouth - use them proportionally."
+      },
+      {
+      "name": "Involve everyone",
+      "description": "Everyone has ideas and wants to be involved in our success. We value each person’s input, so be sure to involve those who don’t say much in every discussion. It’s often the quiet team members who bring the most insight."
+      }
+    ]
+  },
+  {
+    "id": "effectivity",
+    "name": "Personal Effectiveness",  
+    "snippet": "These behaviors help us achieve greater personal and professional success.",
+    "behaviors": [
+      {
+      "name": "Take responsibility and be accountable",
+      "description": "Don’t be a victim. Ask for what you need and take full responsibility for your success. If you see a problem, own it until it’s resolved."
+      },
+      {
+      "name": "Be a coach",
+      "description": "Help your team members learn and grow. We thrive as a business and as individuals when we are constantly growing and improving."
+      }
+    ]
+  }
+]
