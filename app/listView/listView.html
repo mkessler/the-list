@@ -1,0 +1,18 @@
+<p>This is the partial for list view.</p>
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default" ng-repeat="value in values">
+    <div class="panel-heading" toggle target="collapse{{value.id}}">
+      <h4 class="panel-title">{{value.name}}</h4>
+    </div>
+    <div id="collapse{{value.id}}" toggleable active-class="in" exclusion-group="accordion1" class="panel-collapse collapse">
+      <div class="panel-body">
+        {{value.snippet}}
+        <div ng-repeat="behavior in value.behaviors">
+          <p>{{behavior.name}}</p>
+          <p>{{behavior.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
