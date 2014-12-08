@@ -23,16 +23,18 @@ This project is a mock mobile application to exhibit Angular JS and front-end pr
 
 ### Additional Features
 
-1.Custom UI utilizing:
+1. Custom UI utilizing:
   * http://getbootstrap.com/
   * http://mobileangularui.com/
 2. Sidebar Navigation
 
 ### Testing
 
-This application can be tested at https://the-list-mobile.herokuapp.com OR
+This application can be tested at https://the-list-mobile.herokuapp.com 
 
-Clone the the-list repository using [git][git]:
+**OR**
+
+Clone the the-list repository using:
 
 ```
 git clone https://github.com/mkessler/the-list.git
