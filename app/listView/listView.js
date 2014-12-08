@@ -9,8 +9,11 @@ angular.module('myApp.listView', ['ngRoute', 'ngResource'])
 	});
 }])
 
-.controller('listViewCtrl', ['$scope', 'Value', function($scope, Value) {
+.controller('listViewCtrl', ['$scope', '$location', 'Value', function($scope, $location, Value) {
 	$scope.values = Value.query();
+	$scope.goToPage = function (page) {        
+	    $location.url(page);
+	};
 }])
 
 .factory('Value', ['$resource',

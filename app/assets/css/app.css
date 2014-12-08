@@ -65,6 +65,7 @@ a{
 /* Sidebar */
 
 .sidebar-left{
+  width: 240px;
   background: #7f8c8d;
 }
 
@@ -118,7 +119,6 @@ a.list-group-item.active:active{
 .page-snippet{
   display: table-cell;
   font-size: 26px;
-  font-weight: 100;
   margin: 0;
   padding: 20px;
   text-align: center;
@@ -152,7 +152,7 @@ a.list-group-item.active:active{
 html .panel-group .panel-title{
   color: #fff;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 50px;
 }
 
@@ -170,7 +170,7 @@ html .panel-group .panel-title{
 
 .panel-body h5{
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 200;
   margin: 0;
   text-align: center;
   padding: 8px 0;
@@ -179,7 +179,7 @@ html .panel-group .panel-title{
 }
 
 .panel-body ul{
-  font-weight: 100;
+  font-weight: 200;
   margin: 15px 0 0;
   padding: 0 15px;
 }
