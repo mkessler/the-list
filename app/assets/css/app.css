@@ -1,30 +1,158 @@
-/* app css stylesheet */
+/* Elements */
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+body{
+  background: #f4f4f4;
+  color: #34495e;
+  letter-spacing: 1px;
 }
 
-.menu:before {
-  content: "[";
+a{
+  color: #d95d30;
 }
 
-.menu:after {
-  content: "]";
+.hero-image{
+  display: table;
+  width: 100%;
+  min-height: 240px;
+  background: url('../img/urban.jpg') 50% no-repeat;
+  background-size: cover;
+  color: #fff;
+  margin: 0 0 15px;
+  position: relative;
 }
 
-.menu > li {
-  display: inline;
+.hero-overlay{
+  background: rgba(0,0,0,0.65);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+.page-snippet{
+  display: table-cell;
+  font-size: 26px;
+  font-weight: 100;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
 }
 
-.menu > li:nth-child(1):before {
-  content: "";
+.page-snippet span{
+  display: block;
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+/* App Wrapper */
+
+.has-navbar-top .app-body {
+  padding-top: 56px;
+}
+
+.has-navbar-bottom .app-body {
+  padding-bottom: 14px;
+}
+
+/* Navbar */
+
+.navbar{
+  height: 56px;
+  background: #1abc9c;
+  border: 0;
+  border-radius: 0;
+}
+
+.navbar-brand{
+  height: auto;
+  padding: 10px 10px 12px 10px;
+  font-size: 18px;
+  line-height: 34px;
+}
+
+.navbar-brand img{
+  display: inline-block;
+  height: 34px;
+}
+
+.navbar-absolute-bottom{
+  height: 14px;
+  min-height: 0px;
+}
+
+/* Accoridon */
+
+.panel-group{
+  margin: 0;
+}
+
+.panel-group .panel{
+  border: 0;
+  border-radius: 4px;
+  margin: 0 0 15px;
+  overflow: hidden;
+}
+
+.panel-default>.panel-heading{
+  background-color: #e74c3c;
+}
+
+html .panel-group .panel-title{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 50px;
+}
+
+.panel-title span{
+  color: #c0392b;
+  font-size: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.panel-group .panel-heading+.panel-collapse .panel-body{
+  background: #c0392b;
+  color: #fff;
+}
+
+.panel-body h5{
+  font-size: 18px;
+  font-weight: 100;
+  margin: 0;
+  text-align: center;
+  padding: 8px 0;
+  border-top: 1px solid #e74c3c;
+  border-bottom: 1px solid #e74c3c;
+}
+
+.panel-body ul{
+  font-weight: 100;
+  margin: 15px 0 0;
+  padding: 0 15px;
+}
+
+.panel-body ul li{
+  font-size: 15px;
+  list-style-type: none;
+  position: relative;
+  padding: 0 0 0 20px;
+}
+
+.panel-body ul li span{
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.panel-body ul ul{
+  border-left: 8px solid #e74c3c;
+}
+
+.panel-body ul ul li{
+  font-size: 14px;
   padding: 0;
 }

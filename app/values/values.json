@@ -1,5 +1,6 @@
 [
   {
+    "icon": "flag",
     "id": "values",
     "name": "Core Values",  
     "snippet": "These behaviors are tied directly to our core values and have been a cornerstone of our success since our founding.",
@@ -15,6 +16,7 @@
     ]
   }, 
   {
+    "icon": "cog",
     "id": "service",
     "name": "Focus on Service",  
     "snippet": "These habits create extraordinary service experiences.",
@@ -30,6 +32,7 @@
     ]
   },
   {
+    "icon": "send",
     "id": "collaboration",
     "name": "The Collaborative Way",  
     "snippet": "These behaviors enable us to work powerfully together as a team.",
@@ -45,6 +48,7 @@
     ]
   },
   {
+    "icon": "user",
     "id": "effectiveness",
     "name": "Personal Effectiveness",  
     "snippet": "These behaviors help us achieve greater personal and professional success.",

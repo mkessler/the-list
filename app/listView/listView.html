@@ -1,18 +1,31 @@
-<p>This is the partial for list view.</p>
-
-<div class="panel-group" id="accordion">
-  <div class="panel panel-default" ng-repeat="value in values">
-    <div class="panel-heading" toggle target="collapse{{value.id}}">
-      <h4 class="panel-title">{{value.name}}</h4>
-    </div>
-    <div id="collapse{{value.id}}" toggleable active-class="in" exclusion-group="accordion1" class="panel-collapse collapse">
-      <div class="panel-body">
-        {{value.snippet}}
-        <div ng-repeat="behavior in value.behaviors">
-          <p>{{behavior.name}}</p>
-          <p>{{behavior.description}}</p>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="scrollable">
+	<div class="scrollable-content">
+		<div class="hero-image">
+			<div class="hero-overlay"></div>
+			<p class="page-snippet">
+				<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+				Our values are a part of our company culture and DNA.
+			</p>
+		</div>
+		<div class="container">
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default" ng-repeat="value in values" ng-class="{firstPanel: $first, middlePanel: $middle, lastPanel: $last}">
+					<div class="panel-heading" toggle target="collapse{{value.id}}">
+						<h4 class="panel-title"><span class="glyphicon glyphicon-{{value.icon}}" aria-hidden="true"></span>{{value.name}}</h4>
+					</div>
+					<div id="collapse{{value.id}}" toggleable active-class="in" exclusion-group="accordion1" class="panel-collapse collapse">
+						<div class="panel-body">
+							<h5>{{value.snippet}}</h5>
+							<ul ng-repeat="behavior in value.behaviors">
+								<li><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>{{behavior.name}}</li>
+								<ul>
+									<li>{{behavior.description}}</li>
+								</ul>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
