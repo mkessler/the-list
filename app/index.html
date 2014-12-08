@@ -22,17 +22,37 @@
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 			
-		<div class="navbar navbar-app navbar-absolute-top">
-			<div class="navbar-brand navbar-brand-center" yield-to="title">
-				<img src="assets/img/white_logo.png" alt="The List">
+		<div class="sidebar sidebar-left" toggleable parent-active-class="sidebar-left-in" id="mainSidebar">
+			<div class="scrollable">
+				<div class="scrollable-content">
+					<div class="list-group" toggle="off" bubble target="mainSidebar">
+						<a class="list-group-item" href="#/behavior-of-the-week">Behavior of the week<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
+						<a class="list-group-item" href="#/values">Our values<span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span></a>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<div class="app-body">
-			<div ng-view class="app-content"></div>
-		</div>
 		
-		<div class="navbar navbar-app navbar-absolute-bottom">
+		<div class="app">	
+		
+			<div class="navbar navbar-app navbar-absolute-top">
+				<div class="navbar-brand navbar-brand-center" yield-to="title">
+					<img src="assets/img/white_logo.png" alt="The List">
+				</div>
+				<div class="btn-group pull-left menu-toggle">
+					<div ng-click="toggle('mainSidebar')" class="btn btn-navbar sidebar-toggle">
+						<span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+					</div>
+				</div>
+			</div>
+		
+			<div class="navbar navbar-app navbar-absolute-bottom"></div>
+		
+
+			<div class="app-body">
+				<ng-view class="app-content"></ng-view>
+			</div>
+		
 		</div>
 
 		<!-- In production use:
