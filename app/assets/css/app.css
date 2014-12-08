@@ -69,6 +69,17 @@ a{
   background: #7f8c8d;
 }
 
+.sidebar-left-in .app {
+  -webkit-transform: translate3d(240px, 0, 0);
+  transform: translate3d(240px, 0, 0);
+}
+
+@media (min-width: 992px){
+  .has-sidebar-left .app, .sidebar-left-in .app{
+    margin-left: 240px;
+  }
+}
+
 a.list-group-item{
   font-weight: 200;
   background-color: #ecf0f1;
