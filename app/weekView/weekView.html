@@ -1,0 +1,31 @@
+<div class="scrollable">
+	<div class="scrollable-content">
+		<div class="hero-image city">
+			<div class="hero-overlay"></div>
+			<p class="page-snippet">
+				<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+				Behavior of the week.
+			</p>
+		</div>
+		<div class="container">
+			<div class="panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title"><span class="glyphicon glyphicon-{{value[valueIndex()].icon}}" aria-hidden="true"></span>{{value[valueIndex()].name}}</h4>
+					</div>
+					<div class="panel-collapse">
+						<div class="panel-body">
+							<h5>{{value[valueIndex()].snippet}}</h5>
+							<ul>
+								<li><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>{{value[valueIndex()].behaviors[behaviorIndex()].name}}</li>
+								<ul>
+									<li>{{value[valueIndex()].behaviors[behaviorIndex()].description}}</li>
+								</ul>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

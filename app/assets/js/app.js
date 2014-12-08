@@ -5,10 +5,9 @@ angular.module('myApp', [
 	'ngRoute',
 	'mobile-angular-ui',
 	'myApp.listView',
-	'myApp.view1',
-	'myApp.view2',
+	'myApp.weekView',
 	'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
-	$routeProvider.otherwise({redirectTo: '/view1'});
+	$routeProvider.otherwise({redirectTo: '/behavior-of-the-week'});
 }]);

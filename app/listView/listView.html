@@ -1,6 +1,6 @@
 <div class="scrollable">
 	<div class="scrollable-content">
-		<div class="hero-image">
+		<div class="hero-image urban">
 			<div class="hero-overlay"></div>
 			<p class="page-snippet">
 				<span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
@@ -9,7 +9,7 @@
 		</div>
 		<div class="container">
 			<div class="panel-group" id="accordion">
-				<div class="panel panel-default" ng-repeat="value in values" ng-class="{firstPanel: $first, middlePanel: $middle, lastPanel: $last}">
+				<div class="panel panel-default" ng-repeat="value in values">
 					<div class="panel-heading" toggle target="collapse{{value.id}}">
 						<h4 class="panel-title"><span class="glyphicon glyphicon-{{value.icon}}" aria-hidden="true"></span>{{value.name}}</h4>
 					</div>
